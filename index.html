@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embellish Beauty Salon | Beauty Salon in Township Lahore</title>
+  <meta name="description" content="Experience soft luxury at Embellish Beauty Salon in Township, Lahore. Offering HydraFacial, hair care, body polishing, and professional bridal beauty services.">
+  <meta name="keywords" content="Embellish Beauty Salon, Beauty Salon Township Lahore, HydraFacial Township Lahore, Facial salon Township Lahore, Bridal salon Township Lahore">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://embellishbeautysalon.pk/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://embellishbeautysalon.pk/">
+  <meta property="og:title" content="Embellish Beauty Salon | Beauty Salon in Township Lahore">
+  <meta property="og:description" content="Experience soft luxury at Embellish Beauty Salon in Township, Lahore. Premium skincare, HydraFacials, hair spa, and bespoke bridal beauty.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Embellish Beauty Salon | Township Lahore">
+  <meta name="twitter:description" content="Premium skincare, HydraFacials, hair care, and bespoke bridal beauty services in Township, Lahore.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP & Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
+  <script src="animations.js" defer></script>
+
+  <!-- LocalBusiness Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Embellish Beauty Salon",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+923450947364",
+    "email": "embellishbeautysalonpk@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "House #190, Block 2, Sector B-1, Township",
+      "addressLocality": "Lahore",
+      "postalCode": "54770",
+      "addressCountry": "PK"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "11:00",
+      "closes": "21:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "344"
+    },
+    "url": "https://embellishbeautysalon.pk/"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo-link" aria-label="Embellish Beauty Salon Homepage">
+        <span class="logo-text">EMBELLISH</span>
+        <span class="logo-subtext">BEAUTY SALON</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary header-cta">Book Appointment</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay (Click-Only) -->
+  <div class="mobile-nav-overlay" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo-link">
+        <span class="logo-text">EMBELLISH</span>
+      </a>
+      <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary full-width">Book Appointment</a>
+      <p class="mobile-contact-info">Township, Lahore • +92 345 0947364</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div id="three-canvas-container" class="three-canvas-container"></div>
+      <div class="hero-content">
+        <span class="hero-badge reveal-text">TOWNSHIP, LAHORE</span>
+        <h1 class="hero-title reveal-text">Where Beauty Becomes an Experience.</h1>
+        <p class="hero-description reveal-text">Step into a realm of bespoke self-care. Specializing in advanced HydraFacial skincare, restorative hair therapies, and immaculate bridal transformations.</p>
+        <div class="hero-cta-group reveal-text">
+          <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+          <a href="services.html" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80" alt="Luxury beauty salon skincare treatment space" class="hero-image" width="1000" height="750">
+      </div>
+    </section>
+
+    <!-- Business Trust Snapshot -->
+    <section class="section trust-section">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-rating">
+              <span class="rating-num">4.9</span>
+              <span class="rating-stars">★★★★★</span>
+            </div>
+            <p class="trust-label">Google Rating (344 Public Reviews)</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-metric">7 Days</span>
+            <p class="trust-label">11:00 AM – 9:00 PM Daily</p>
+          </div>
+          <div class="trust-item">
+            <span class="trust-metric">Township</span>
+            <p class="trust-label">Block 2, Sector B-1, Lahore</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section about-preview">
+      <div class="container grid-split">
+        <div class="split-image-container">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Esthetician performing gentle facial cleansing ritual" class="img-responsive rounded-luxury" loading="lazy" decoding="async" width="800" height="1000">
+        </div>
+        <div class="split-content">
+          <span class="section-subtitle">DISCOVER EMBELLISH</span>
+          <h2 class="section-title">An Sanctuary for Refined Aesthetics.</h2>
+          <p class="body-text">Embellish Beauty Salon is founded on the principle that genuine care requires precision, calm, and tailored attention. Serving Township, Lahore, our modern space offers bespoke skincare, hair therapies, and grooming treatments performed by attentive professionals.</p>
+          <p class="body-text">Whether preparing for a major milestone or preserving your daily radiance, we provide an environment centered on wellness and understated elegance.</p>
+          <a href="about.html" class="btn btn-secondary margin-top-sm">Discover Our Philosophy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="section featured-services-section bg-light">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">CURATED OFFERINGS</span>
+          <h2 class="section-title">Featured Beauty & Care Services</h2>
+        </div>
+
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <div class="luxury-card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="HydraFacial deep hydration aesthetic skin care" loading="lazy" width="600" height="400">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Signature HydraFacial</h3>
+              <p class="card-text">Advanced multi-step facial treatment engineered for deep hydration, pore purification, and a natural luminous glow.</p>
+              <a href="services.html" class="card-link">Explore Skincare &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="luxury-card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" alt="Restorative hair care therapy treatment" loading="lazy" width="600" height="400">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Hair Protein & Spa</h3>
+              <p class="card-text">Deep nourishment rituals tailored to restore structural protein, smooth texture, and enhance hair vitality.</p>
+              <a href="services.html" class="card-link">Explore Hair Care &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="luxury-card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Precision manicure and hand care therapy" loading="lazy" width="600" height="400">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Manicure & Pedicure</h3>
+              <p class="card-text">Metalous hand and foot care featuring scrub exfoliation, nail shaping, oil massage, and deep hydration.</p>
+              <a href="services.html" class="card-link">Explore Hands & Feet &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HydraFacial Feature Highlight -->
+    <section class="section hydra-feature-section">
+      <div class="container grid-split reverse-mobile">
+        <div class="split-content">
+          <span class="section-subtitle">SKINCARE EXCELLENCE</span>
+          <h2 class="section-title">Rejuvenate with Specialized HydraFacial Therapies.</h2>
+          <p class="body-text">HydraFacial technology combines vacuum extraction with intensive serum infusion to address surface impurities, dryness, and dullness without skin trauma.</p>
+          <ul class="feature-list">
+            <li><strong>Deep Exfoliation:</strong> Clears surface debris and clogged pores gently.</li>
+            <li><strong>Targeted Infusion:</strong> Delivers essential moisture and nourishment directly to top skin layers.</li>
+            <li><strong>Post-Hydra Care:</strong> Complemented with specialized cooling masks and under-eye treatments.</li>
+          </ul>
+          <a href="services.html" class="btn btn-primary margin-top-sm">Explore Skincare Catalog</a>
+        </div>
+        <div class="split-image-container">
+          <img src="https://images.unsplash.com/photo-1512290900673-7002fe5cdc6a?auto=format&fit=crop&w=800&q=80" alt="HydraFacial serum applicator tool close-up" class="img-responsive rounded-luxury" loading="lazy" width="800" height="1000">
+        </div>
+      </div>
+    </section>
+
+    <!-- Bridal Section -->
+    <section class="section bridal-section text-light">
+      <div class="bridal-overlay"></div>
+      <div class="container relative-z">
+        <div class="max-width-center text-center">
+          <span class="section-subtitle light-text">WEDDING & BRIDAL SERVICES</span>
+          <h2 class="section-title text-white">Your Special Moments Deserve Tailored Perfection.</h2>
+          <p class="body-text text-light-muted">Our female makeup artists and hair stylists specialize in crafting timeless bridal aesthetics tailored to your features, outfit, and personal elegance.</p>
+          <div class="margin-top-md">
+            <a href="contact.html" class="btn btn-gold">Enquire About Bridal Booking</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Gallery -->
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">THE AESTHETIC</span>
+          <h2 class="section-title">Visual Inspiration</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item item-tall">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Salon interior treatment station placeholder" loading="lazy" width="600" height="800">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Beauty styling model preview" loading="lazy" width="600" height="400">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Skincare cleansing aesthetic" loading="lazy" width="600" height="400">
+          </div>
+          <div class="gallery-item item-wide">
+            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80" alt="Cosmetic tools and subtle interior accents" loading="lazy" width="800" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Review Proof Section -->
+    <section class="section social-proof-section bg-light text-center">
+      <div class="container">
+        <span class="section-subtitle">PUBLIC REVIEWS</span>
+        <h2 class="section-title">Trusted by Our Community</h2>
+        <div class="rating-display-large">
+          <span class="rating-big">4.9</span>
+          <span class="stars-gold">★★★★★</span>
+          <p class="rating-sub">Based on 344 publicly listed Google Business reviews</p>
+        </div>
+        <p class="body-text max-width-center margin-top-sm">We take pride in maintaining high standards of client satisfaction in Township, Lahore.</p>
+        <div class="margin-top-md">
+          <a href="https://www.google.com/maps/search/?api=1&query=Embellish+Beauty+Salon+Township+Lahore" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View Reviews on Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Directions -->
+    <section class="section location-section">
+      <div class="container grid-split">
+        <div class="split-content">
+          <span class="section-subtitle">VISIT OUR SALON</span>
+          <h2 class="section-title">Conveniently Located in Township, Lahore</h2>
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <strong>Address:</strong>
+              <p>House #190, Block 2, Sector B-1, Township, Lahore, 54770, Pakistan</p>
+            </div>
+            <div class="contact-detail-item">
+              <strong>Hours:</strong>
+              <p>Monday – Sunday: 11:00 AM – 9:00 PM</p>
+            </div>
+            <div class="contact-detail-item">
+              <strong>Phone:</strong>
+              <p><a href="tel:+923450947364" class="inline-link">+92 345 0947364</a></p>
+            </div>
+          </div>
+          <div class="margin-top-md">
+            <a href="https://www.google.com/maps/search/?api=1&query=Embellish+Beauty+Salon+House+190+Block+2+Sector+B1+Township+Lahore" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Directions</a>
+          </div>
+        </div>
+        <div class="split-image-container flex-center">
+          <div class="location-card-box">
+            <h3>Embellish Beauty Salon</h3>
+            <p>House #190, Block 2, Sector B-1, Township, Lahore</p>
+            <hr class="divider">
+            <p class="status-indicator"><span class="dot-green"></span> Open Daily: 11 AM – 9 PM</p>
+            <p class="small-text margin-top-xs">Appointments recommended for evening slots and weekend services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Bar -->
+    <section class="section cta-banner bg-dark text-light">
+      <div class="container text-center">
+        <h2 class="section-title text-white">Ready for Your Next Beauty Appointment?</h2>
+        <p class="body-text text-light-muted max-width-center">Contact our team to schedule your appointment or inquire about tailored beauty treatments.</p>
+        <div class="cta-banner-buttons margin-top-md">
+          <a href="tel:+923450947364" class="btn btn-gold">Call Salon</a>
+          <a href="https://wa.me/923450947364" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-white">WhatsApp Us</a>
+          <a href="contact.html" class="btn btn-primary">Book Online</a>
+        </div>
+        <p class="small-text text-light-muted margin-top-xs">WhatsApp availability subject to line status.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <a href="index.html" class="logo-link">
+            <span class="logo-text">EMBELLISH</span>
+            <span class="logo-subtext">BEAUTY SALON</span>
+          </a>
+          <p class="footer-text margin-top-xs">Premium beauty, skincare, hair therapy, and specialized bridal styling in Township, Lahore.</p>
+          <div class="footer-rating-badge">
+            <span>Google Rating: 4.9 ★ (344 reviews)</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Information</h4>
+          <address class="footer-address">
+            House #190, Block 2, Sector B-1, Township, Lahore, 54770, Pakistan<br><br>
+            <strong>Phone:</strong> <a href="tel:+923450947364">+92 345 0947364</a><br>
+            <strong>Email:</strong> <a href="mailto:embellishbeautysalonpk@gmail.com">embellishbeautysalonpk@gmail.com</a><br>
+            <strong>Hours:</strong> 11:00 AM – 9:00 PM Daily
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Appointments</h4>
+          <p class="footer-text">Schedule your session directly or call our client support desk.</p>
+          <a href="contact.html" class="btn btn-primary margin-top-xs">Book Appointment</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Embellish Beauty Salon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="mobile-bottom-bar" aria-label="Quick Action Controls">
+    <a href="tel:+923450947364" class="mobile-action-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/923450947364" target="_blank" rel="noopener noreferrer" class="mobile-action-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="contact.html" class="mobile-action-btn primary-action">
+      <span>Book</span>
+    </a>
+  </div>
+
+</body>
+</html>
